@@ -1,0 +1,22 @@
+.cardlist {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cardlist__card {
+  flex: 1 1;
+
+  min-width: 400px;
+  margin: 10px;
+
+  // display: table;
+}
+
+.cardlist__card--overflow-hidden {
+  overflow-y: hidden;
+  height: 200px;
+
+  &:hover {
+    overflow-y: scroll;
+  }
+}
